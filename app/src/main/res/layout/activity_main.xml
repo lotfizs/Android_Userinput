@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkmode"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RadioGroup
+            android:id="@+id/radioGroupOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/CustomText"
+                android:text="What is the full name of HTML?" />
+
+
+            <RadioButton
+                android:id="@+id/radioAnsOne"
+                style="@style/CustomRadio"
+                android:text="Hypertext Markup Language" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Hypertext Mark Language" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/CustomText"
+                android:text="What is the full name of CSS?" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Construction Style Sheets" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Complex Style Sheets" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Coding Style Sheets" />
+
+            <RadioButton
+                android:id="@+id/radioAnsTwo"
+                style="@style/CustomRadio"
+                android:text="Cascading Style Sheets" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/CustomText"
+                android:text="Do you use CSS for styling?" />
+
+            <RadioButton
+                android:id="@+id/radioAnsThree"
+                style="@style/CustomRadio"
+                android:text="True" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="False" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/CustomText"
+                android:text="what does int stands for?" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Intercom" />
+
+            <RadioButton
+                android:id="@+id/radioAnsFour"
+                style="@style/CustomRadio"
+                android:text="Interface" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text=" initialize" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="instruct" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/CustomText"
+                android:text="Is the internet part of ICT?" />
+
+            <RadioButton
+                android:id="@+id/radioAnsFive"
+                style="@style/CustomRadio"
+                android:text=" True" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text=" False" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/CustomText"
+            android:text="What does PC stand for?" />
+
+        <CheckBox
+            android:id="@+id/checkAns1"
+            style="@style/CustomRadio"
+            android:text="Personal Computer" />
+
+        <CheckBox
+            android:id="@+id/checkAns4"
+            style="@style/CustomRadio"
+            android:text="Private Console" />
+
+        <CheckBox
+            android:id="@+id/checkAns2"
+            style="@style/CustomRadio"
+            android:text="Private Computer" />
+
+        <CheckBox
+            android:id="@+id/checkAns3"
+            style="@style/CustomRadio"
+            android:text="Personal Console" />
+
+        <TextView
+            style="@style/CustomText"
+            android:text="with what software is this made" />
+
+        <EditText
+            android:id="@+id/checkAns7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:background="#fff"
+            android:hint="Put Your answer here"/>
+
+
+        <Button
+            android:id="@+id/submit_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submit_answer"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textSize="24sp" />
+    </LinearLayout>
+</ScrollView>
